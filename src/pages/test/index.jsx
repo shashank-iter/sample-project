@@ -72,7 +72,13 @@ function Test() {
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <defs>
+            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#2e5ce5" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#2e5ce5" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
@@ -80,8 +86,8 @@ function Test() {
             type="monotone"
             dataKey="uv"
             stackId="1"
-            stroke="#8884d8"
-            fill="#8884d8"
+            stroke="transparent"
+            fill="url(#colorUv)"
           />
           {/* <Area
             type="monotone"
@@ -94,8 +100,9 @@ function Test() {
             type="monotone"
             dataKey="amt"
             stackId="1"
-            stroke="#ffc658"
-            fill="#ffffff"
+            stroke="#2e5ce5"
+            fill="transparent"
+            strokeWidth="3.5"
           />
         </AreaChart>
       </div>
