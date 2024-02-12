@@ -13,57 +13,64 @@ import {
 
 const data = [
   {
-    name: 'Page A',
+    name: '2015',
     uv: 0,
     pv: 2400,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page B',
+    name: '2016',
     uv: 1000,
     pv: 1398,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page C',
+    name: '2017',
     uv: 2000,
     pv: 9800,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page D',
+    name: '2018',
     uv: 3000,
     pv: 3908,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page E',
+    name: '2019',
     uv: 4000,
     pv: 4800,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page F',
+    name: '2020',
     uv: 5000,
     pv: 3800,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
   {
-    name: 'Page G',
+    name: '2021',
     uv: 6000,
     pv: 4300,
     amt: faker.number.int({ min: 0, max: 2000 }),
   },
 ];
-
+const data2 = [
+  { name: '2015', uv: 4000, pv: 2400, amt: 0 },
+  { name: '2016', uv: 3000, pv: 1398, amt: 2210 },
+  { name: '2017', uv: 2000, pv: 9800, amt: 2290 },
+  { name: '2018', uv: 2780, pv: 3908, amt: 2000 },
+  { name: '2019', uv: 1890, pv: 4800, amt: 2181 },
+  { name: '2020', uv: 2390, pv: 3800, amt: 2500 },
+  { name: '2021', uv: 3490, pv: 4300, amt: 2100 },
+];
 function Test() {
   return (
-    <div>
-      test
-      <div className="bg-white w-[50rem] h-[40rem]">
+  
+      <div className="bg-white ">
         <AreaChart
-          width={500}
-          height={400}
+          width={340}
+          height={300}
           data={data}
           margin={{
             top: 10,
@@ -79,8 +86,8 @@ function Test() {
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis dataKey="name" padding="gap"  />
+          <YAxis hide={true} />
           <Tooltip />
           <Area
             type="monotone"
@@ -106,7 +113,7 @@ function Test() {
           />
         </AreaChart>
       </div>
-    </div>
+  
   );
 }
 
