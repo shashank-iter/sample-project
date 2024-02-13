@@ -19,6 +19,7 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
     "react-select": "^5.8.0",
+    "react-tooltip": "^5.26.2",
     "recharts": "^2.12.0",
     "victory": "^36.9.1"
   },

@@ -7,6 +7,7 @@ import {
   ChevronUpDownIcon,
   QuestionMarkCircleIcon,
 } from '@heroicons/react/20/solid';
+import { Tooltip } from 'react-tooltip';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
@@ -38,7 +39,9 @@ const Index = () => {
       {/* title of page */}
       <h1 className="inline-flex justify-center items-center">
         <span className="text-3xl">Data Lakehouse</span>
-        <span className="text-sm text-gray-400 ml-1.5 leading-9">(Keyword)</span>
+        <span className="text-sm text-gray-400 ml-1.5 leading-9">
+          (Keyword)
+        </span>
       </h1>
 
       {/* short description */}
@@ -140,7 +143,17 @@ const Index = () => {
             <span className="text-4xl font-semibold text-blue-600">9.9K</span>
             <span className="text-xs text-gray-400 flex gap-1">
               Volume
-              <QuestionMarkCircleIcon className="w-4 h-4 " />
+              <QuestionMarkCircleIcon
+                className="w-4 h-4 hover:text-black"
+                data-tooltip-id="my-volume"
+                data-tooltip-place="top"
+              />
+              <Tooltip id="my-volume" >
+                <div className="flex flex-col">
+                  <span className="">Global Google search volume</span>
+                  <span className="">for the previous full month.</span>
+                </div>
+              </Tooltip>
             </span>
           </div>
           {/* growth */}
@@ -148,7 +161,17 @@ const Index = () => {
             <span className="text-4xl font-semibold text-green-500">7.6K</span>
             <span className="text-xs text-gray-400 flex gap-1">
               Growth
-              <QuestionMarkCircleIcon className="w-4 h-4 " />
+              <QuestionMarkCircleIcon
+                className="w-4 h-4 hover:text-black"
+                data-tooltip-id="my-growth"
+                // data-tooltip-content="The increase in search volume since the previous full month."
+              />
+              <Tooltip id="my-growth" place="top">
+                <div className="flex flex-col">
+                  <span className="">The increase in search volume</span>
+                  <span className="">since the previous full month.</span>
+                </div>
+              </Tooltip>
             </span>
           </div>
         </div>
