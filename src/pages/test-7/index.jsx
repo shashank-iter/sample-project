@@ -1,5 +1,4 @@
 import { faker } from '@faker-js/faker';
-import CustomTooltip from '@/components/customTooltip';
 import {
   Area,
   AreaChart,
@@ -9,7 +8,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-
+import CustomTooltip from '@/components/customTooltip';
 const data = [
   {
     name: '2015',
@@ -63,6 +62,9 @@ const data2 = [
   { name: '2020', uv: 2390, pv: 3800, amt: 2500 },
   { name: '2021', uv: 3490, pv: 4300, amt: 2100 },
 ];
+
+
+
 function Test() {
   return (
     <div className="bg-white ">
@@ -88,8 +90,8 @@ function Test() {
           </defs>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name"  padding={{ left: 20, right: 20 }}  />
-          <YAxis hide={false} axisLine={false} />
-          <Tooltip content={<CustomTooltip/>}/>
+          <YAxis hide={true} />
+          <Tooltip content={<CustomTooltip/>} />
           <Area
             type="monotone"
             dataKey="uv"

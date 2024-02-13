@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 
 function index() {
-  const Test = dynamic(() => import("./test"), { ssr: false });
+  const Test = dynamic(() => import("./test-7"), { ssr: false });
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-2 sm:mx-auto sm:px-10 py-10 ">
