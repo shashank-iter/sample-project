@@ -87,8 +87,8 @@ function Test() {
             {/* make a horizontally fading gradient */}
           </defs>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="name" padding="gap" />
-          <YAxis hide={true} />
+          <XAxis dataKey="name"  padding={{ left: 20, right: 20 }}  />
+          <YAxis hide={false} axisLine={false} />
           <Tooltip />
           <Area
             type="monotone"
