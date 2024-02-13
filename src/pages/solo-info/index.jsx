@@ -30,7 +30,7 @@ const Index = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="mx-32 my-10 p-4 bg-white">
+    <div className=" md:mx-32 md:my-10 p-4 bg-white">
       {/* header */}
 
       {/* breadcrumb */}
@@ -49,7 +49,7 @@ const Index = () => {
       </p>
 
       {/* container */}
-      <div className="flex my-4 justify-between">
+      <div className="flex my-4 justify-between flex-wrap gap-4">
         {/* buttons */}
         <div className="flex gap-4 justify-center items-center">
           {/* select */}
@@ -139,7 +139,7 @@ const Index = () => {
         <div className="flex gap-4 justify-center items-center">
           {/* volume */}
           <div className="flex flex-col justify-center items-center gap-1">
-            <span className="text-4xl font-semibold text-blue-600">9.9K</span>
+            <span className="text-3xl md:text-4xl font-semibold text-blue-600">9.9K</span>
             <span className="text-xs text-gray-400 flex gap-1">
               Volume
               <QuestionMarkCircleIcon
@@ -157,7 +157,7 @@ const Index = () => {
           </div>
           {/* growth */}
           <div className="flex flex-col justify-center items-center gap-1">
-            <span className="text-4xl font-semibold text-green-500">7.6K</span>
+            <span className="text-3xl md:text-4xl font-semibold text-green-500">7.6K</span>
             <span className="text-xs text-gray-400 flex gap-1">
               Growth
               <QuestionMarkCircleIcon
