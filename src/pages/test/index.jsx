@@ -1,11 +1,10 @@
-
 import { faker } from '@faker-js/faker';
-
 
 import {
   Area,
   AreaChart,
   CartesianGrid,
+  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -66,8 +65,8 @@ const data2 = [
 ];
 function Test() {
   return (
-  
-      <div className="bg-white ">
+    <div className="bg-white ">
+      <ResponsiveContainer width="100%" height={300}>
         <AreaChart
           width={340}
           height={300}
@@ -78,15 +77,17 @@ function Test() {
             left: 0,
             bottom: 0,
           }}
+          className="w-full"
         >
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#2e5ce5" stopOpacity={0.8} />
+              <stop offset="5%" stopColor="#2e5ce5" stopOpacity={0.5} />
               <stop offset="95%" stopColor="#2e5ce5" stopOpacity={0} />
             </linearGradient>
+            {/* make a horizontally fading gradient */}
           </defs>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="name" padding="gap"  />
+          <XAxis dataKey="name" padding="gap" />
           <YAxis hide={true} />
           <Tooltip />
           <Area
@@ -112,8 +113,8 @@ function Test() {
             strokeWidth="3.5"
           />
         </AreaChart>
-      </div>
-  
+      </ResponsiveContainer>
+    </div>
   );
 }
 
