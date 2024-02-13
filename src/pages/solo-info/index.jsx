@@ -31,7 +31,6 @@ const Index = () => {
 
   return (
     <div className="mx-32 my-10 p-4 bg-white">
-      {console.log('ejskd')}
       {/* header */}
 
       {/* breadcrumb */}

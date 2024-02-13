@@ -80,8 +80,8 @@ function Test() {
           className="w-full"
         >
           <defs>
-            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#2e5ce5" stopOpacity={0.5} />
+            <linearGradient id="colorUv" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="5%" stopColor="#2e5ce5" stopOpacity={0.4} />
               <stop offset="95%" stopColor="#2e5ce5" stopOpacity={0} />
             </linearGradient>
             {/* make a horizontally fading gradient */}
