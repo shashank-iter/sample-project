@@ -28,11 +28,11 @@ const CustomTooltip = (props) => {
           borderRadius: "3px",
         }}
       >
-        <p className="w-full text-center text-black font-semibold text-xs">
-          {payload[0].payload.name}
+        <p className="w-full text-center text-gray-600 font-semibold text-xs uppercase">
+          {payload[0].payload.month}
         </p>
         <p className="text-xl text-center flex flex-row place-items-center gap-x-2 font-semibold text-blue-500">
-          <p>{convertNumberToKForm(payload[0].value) + "/year"}</p>
+          <p>{convertNumberToKForm(payload[1].value) + "/mo"}</p>
           <QuestionMarkCircleIcon
           className="w-5 h-5 hover:text-black text-blue-500 pt-1"
           data-tooltip-id="my-growth"
