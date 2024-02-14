@@ -31,8 +31,7 @@ const Index = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <>
-    <div className=" md:mx-32 md:my-10  ">
+    <div className=" md:mx-32 md:my-10 p-4 bg-white">
       {/* header */}
 
       {/* breadcrumb */}
@@ -45,17 +44,10 @@ const Index = () => {
         </span>
       </h1>
 
-        {/* short description */}
-        <p className="mt-6 text-base">
-          {`Data solution concept combining "data warehouse" and "data lake".`}
-        </p>
-      </div>
-      <div className="mx-32 my-10 p-4 min-h-96 bg-white">
-        {/* header */}
-
-        {/* breadcrumb */}
-
-        {/* title of page */}
+      {/* short description */}
+      <p className="mt-6 text-base">
+        {`Data solution concept combining "data warehouse" and "data lake".`}
+      </p>
 
       {/* container */}
       <div className="flex my-4 justify-between flex-wrap gap-4">
@@ -121,32 +113,32 @@ const Index = () => {
             </Listbox>
           </div>
 
-            {/* toggle */}
-            <div className="flex justify-center items-center gap-2 rounded-md bg-blue-100 py-3 px-4 text-sm text-[#2e5ce5] font-semibold ">
-              <ArrowTrendingUpIcon className="w-4 h-4 mr-2" />
-              <span className="text-sm">
-                {/* {enabled ? 'Enabled' : 'Disabled'} */}
-                Forecast
-              </span>
-              <Switch
-                checked={enabled}
-                onChange={setEnabled}
-                className={`${enabled ? "bg-[#2e5ce5]" : "bg-[#2e5ce5]/70"}
+          {/* toggle */}
+          <div className="flex justify-center items-center gap-2 rounded-md bg-blue-100 py-3 px-4 text-sm text-[#2e5ce5] font-semibold ">
+<ArrowTrendingUpIcon className="w-4 h-4 mr-2" />
+            <span className="text-sm">
+              {/* {enabled ? 'Enabled' : 'Disabled'} */}
+              Forecast
+            </span>
+            <Switch
+              checked={enabled}
+              onChange={setEnabled}
+              className={`${enabled ? "bg-[#2e5ce5]" : "bg-[#2e5ce5]/70"}
           relative inline-flex h-[20px] w-[2.8rem] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
-              >
-                <span className="sr-only">Use setting</span>
-                <span
-                  aria-hidden="true"
-                  className={`${
-                    enabled ? "translate-x-[1.6rem]" : "translate-x-0"
-                  }
+            >
+              <span className="sr-only">Use setting</span>
+              <span
+                aria-hidden="true"
+                className={`${
+                  enabled ? "translate-x-[1.6rem]" : "translate-x-0"
+                }
             pointer-events-none inline-block h-[16px] aspect-square  transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out my-auto`}
               />
             </Switch>
           </div>
         </div>
         {/* stats */}
-        <div className="flex gap-4 justify-center items-center pr-10 ">
+        <div className="flex gap-4 justify-center items-center">
           {/* volume */}
           <div className="flex flex-col justify-center items-center gap-1">
             <span className="text-3xl md:text-4xl font-semibold text-blue-600">9.9K</span>
@@ -186,9 +178,8 @@ const Index = () => {
         </div>
       </div>
 
-        <Test />
-      </div>
-    </>
+      <Test />
+    </div>
   );
 };
 
