@@ -72,7 +72,7 @@ const Index = () => {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none flex flex-col gap-4 p-2 will-change-transform -translate-y-36">
+                  <Listbox.Options className="absolute mt-1 w-full overflow-auto rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none flex flex-col gap-4 p-2 will-change-transform -translate-y-36">
                     {people.map((person, personIdx) => (
                       <Listbox.Option
                         key={personIdx}
