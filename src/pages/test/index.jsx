@@ -16,53 +16,408 @@ const data = [
     uv: 0,
     pv: 2400,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2016',
     uv: 1000,
     pv: 1398,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2017',
     uv: 2000,
     pv: 9800,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2018',
     uv: 3000,
     pv: 3908,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2019',
     uv: 4000,
     pv: 4800,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2020',
     uv: 5000,
     pv: 3800,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
   {
     name: '2021',
     uv: 6000,
     pv: 4300,
     amt: faker.number.int({ min: 0, max: 2000 }),
+    monthtlyData: [
+      {
+        mth: 'Jan',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Feb',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Mar',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Apr',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'May',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jun',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Jul',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Aug',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Sep',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Oct',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Nov',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+      {
+        mth: 'Dec',
+        monthAmt: faker.number.int({ min: 0, max: 2000 }),
+      },
+    ],
   },
 ];
-const data2 = [
-  { name: '2015', uv: 4000, pv: 2400, amt: 0 },
-  { name: '2016', uv: 3000, pv: 1398, amt: 2210 },
-  { name: '2017', uv: 2000, pv: 9800, amt: 2290 },
-  { name: '2018', uv: 2780, pv: 3908, amt: 2000 },
-  { name: '2019', uv: 1890, pv: 4800, amt: 2181 },
-  { name: '2020', uv: 2390, pv: 3800, amt: 2500 },
-  { name: '2021', uv: 3490, pv: 4300, amt: 2100 },
-];
+
+let flatData = data.reduce((acc, yearData) => {
+  yearData.monthtlyData.forEach((monthData) => {
+    acc.push({
+      year: yearData.name,
+      month: monthData.mth,
+      monthAmt: monthData.monthAmt,
+    });
+  });
+  return acc;
+}, []);
+
+console.log(flatData);
+
 function Test() {
   return (
     <div className="bg-white ">
@@ -70,7 +425,7 @@ function Test() {
         <AreaChart
           width={340}
           height={300}
-          data={data}
+          data={flatData}
           margin={{
             top: 10,
             right: 30,
@@ -87,7 +442,8 @@ function Test() {
             {/* make a horizontally fading gradient */}
           </defs>
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="name"  padding={{ left: 20, right: 20 }}  />
+          <XAxis dataKey="year"
+            padding={{ left: 20, right: 20 }} interval={15}  />
           <YAxis hide={false} axisLine={false} />
           <Tooltip content={<CustomTooltip/>}/>
           <Area
@@ -106,7 +462,7 @@ function Test() {
           /> */}
           <Area
             type="monotone"
-            dataKey="amt"
+            dataKey="monthAmt"
             stackId="1"
             stroke="#2e5ce5"
             fill="transparent"
