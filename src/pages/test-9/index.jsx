@@ -144,39 +144,39 @@ const data = [
       },
       {
         mth: "Apr",
-        monthAmt: 4000,
+        monthAmt: 4500,
       },
       {
         mth: "May",
-        monthAmt: 4000,
+        monthAmt: 4200,
       },
       {
         mth: "Jun",
-        monthAmt: 4000,
+        monthAmt: 3700,
       },
       {
         mth: "Jul",
-        monthAmt: 4000,
+        monthAmt: 3500,
       },
       {
         mth: "Aug",
-        monthAmt: 4000,
+        monthAmt: 3400,
       },
       {
         mth: "Sep",
-        monthAmt: 4000,
+        monthAmt: 3100,
       },
       {
         mth: "Oct",
-        monthAmt: 4000,
+        monthAmt: 3200,
       },
       {
         mth: "Nov",
-        monthAmt: 4000,
+        monthAmt: 2800,
       },
       {
         mth: "Dec",
-        monthAmt: 4000,
+        monthAmt: 2500,
       },
 
     ],
@@ -189,19 +189,19 @@ const data = [
     monthtlyData: [
       {
         mth: "Jan",
-        monthAmt: 4000,
+        monthAmt: 5500,
       },
       {
         mth: "Feb",
-        monthAmt: 4000,
+        monthAmt: 5900,
       },
       {
         mth: "Mar",
-        monthAmt: 4000,
+        monthAmt: 6000,
       },
       {
         mth: "Apr",
-        monthAmt: 4000,
+        monthAmt: 6500,
       },
       {
         mth: "May",
@@ -209,11 +209,11 @@ const data = [
       },
       {
         mth: "Jun",
-        monthAmt: 4000,
+        monthAmt: 2000,
       },
       {
         mth: "Jul",
-        monthAmt: 4000,
+        monthAmt: 1100,
       },
       {
         mth: "Aug",
@@ -221,19 +221,19 @@ const data = [
       },
       {
         mth: "Sep",
-        monthAmt: 4000,
+        monthAmt: 3300,
       },
       {
         mth: "Oct",
-        monthAmt: 4000,
+        monthAmt: 3000,
       },
       {
         mth: "Nov",
-        monthAmt: 4000,
+        monthAmt: 2000,
       },
       {
         mth: "Dec",
-        monthAmt: 4000,
+        monthAmt: 1100,
       },
       
     ],
@@ -265,12 +265,13 @@ let flatData = data.reduce((acc, yearData) => {
 }, []);
 
 // console.log(flatData, "flatData");
-const regressionLine = regression.linear(flatData.map((d) => [d.year, d.monthAmt]));
+const regressionLine = regression.linear(flatData.map((d, i) => [i, d.monthAmt]));
 console.log(regressionLine, "regressionLine");
-flatData = flatData.map((d) => {
+
+flatData = flatData.map((d, i) => {
   return {
     ...d,
-    uv: regressionLine.predict(d.year)[1],
+    uv: regressionLine.predict(i)[1],
   };
 });
 console.log(flatData, "flatData");
