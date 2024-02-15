@@ -12,233 +12,233 @@ import {
 import CustomTooltip from '@/components/customTooltip';
 import { Log } from 'victory';
 const data = [
-  {
-    name: 2015,
-    uv: 0,
-    pv: 2400,
-    amt: 1000,
-    monthtlyData: [
-      {
-        mth: "Jan",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Feb",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Mar",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Apr",
-        monthAmt: 4000,
-      },
-      {
-        mth: "May",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Jun",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Jul",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Aug",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Sep",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Oct",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Nov",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Dec",
-        monthAmt: 4000,
-      },
-    ],
-  },
-  {
-    name: 2016,
-    uv: 1000,
-    pv: 1398,
-    amt: 3000,
-    monthtlyData: [
-      {
-        mth: "Jan",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Feb",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Mar",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Apr",
-        monthAmt: 4000,
-      },
-      {
-        mth: "May",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Jun",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Jul",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Aug",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Sep",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Oct",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Nov",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Dec",
-        monthAmt: 4000,
-      },
-    ],
-  },
-  {
-    name: 2017,
-    uv: 2000,
-    pv: 9800,
-    amt: 4566,
-    monthtlyData: [
-      {
-        mth: "Jan",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Feb",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Mar",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Apr",
-        monthAmt: 4500,
-      },
-      {
-        mth: "May",
-        monthAmt: 4200,
-      },
-      {
-        mth: "Jun",
-        monthAmt: 3700,
-      },
-      {
-        mth: "Jul",
-        monthAmt: 3500,
-      },
-      {
-        mth: "Aug",
-        monthAmt: 3400,
-      },
-      {
-        mth: "Sep",
-        monthAmt: 3100,
-      },
-      {
-        mth: "Oct",
-        monthAmt: 3200,
-      },
-      {
-        mth: "Nov",
-        monthAmt: 2800,
-      },
-      {
-        mth: "Dec",
-        monthAmt: 2500,
-      },
-
-    ],
-  },
-  {
-    name: 2018,
-    uv: 2000,
-    pv: 9800,
-    amt: 4566,
-    monthtlyData: [
-      {
-        mth: "Jan",
-        monthAmt: 5500,
-      },
-      {
-        mth: "Feb",
-        monthAmt: 5900,
-      },
-      {
-        mth: "Mar",
-        monthAmt: 6000,
-      },
-      {
-        mth: "Apr",
-        monthAmt: 6500,
-      },
-      {
-        mth: "May",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Jun",
-        monthAmt: 2000,
-      },
-      {
-        mth: "Jul",
-        monthAmt: 1100,
-      },
-      {
-        mth: "Aug",
-        monthAmt: 4000,
-      },
-      {
-        mth: "Sep",
-        monthAmt: 3300,
-      },
-      {
-        mth: "Oct",
-        monthAmt: 3000,
-      },
-      {
-        mth: "Nov",
-        monthAmt: 2000,
-      },
-      {
-        mth: "Dec",
-        monthAmt: 1100,
-      },
-      
-    ],
-  },
-];
+    {
+      name: 2015,
+      uv: 0,
+      pv: 2400,
+      amt: 1000,
+      monthtlyData: [
+        {
+          mth: "Jan",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Feb",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Mar",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Apr",
+          monthAmt: 4000,
+        },
+        {
+          mth: "May",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jun",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jul",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Aug",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Sep",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Oct",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Nov",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Dec",
+          monthAmt: 4000,
+        },
+      ],
+    },
+    {
+      name: 2016,
+      uv: 1000,
+      pv: 1398,
+      amt: 3000,
+      monthtlyData: [
+        {
+          mth: "Jan",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Feb",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Mar",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Apr",
+          monthAmt: 4000,
+        },
+        {
+          mth: "May",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jun",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jul",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Aug",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Sep",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Oct",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Nov",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Dec",
+          monthAmt: 4000,
+        },
+      ],
+    },
+    {
+      name: 2017,
+      uv: 2000,
+      pv: 9800,
+      amt: 4566,
+      monthtlyData: [
+        {
+          mth: "Jan",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Feb",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Mar",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Apr",
+          monthAmt: 4000,
+        },
+        {
+          mth: "May",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jun",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jul",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Aug",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Sep",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Oct",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Nov",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Dec",
+          monthAmt: 4000,
+        },
+  
+      ],
+    },
+    {
+      name: 2018,
+      uv: 2000,
+      pv: 9800,
+      amt: 4566,
+      monthtlyData: [
+        {
+          mth: "Jan",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Feb",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Mar",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Apr",
+          monthAmt: 4000,
+        },
+        {
+          mth: "May",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jun",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Jul",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Aug",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Sep",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Oct",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Nov",
+          monthAmt: 4000,
+        },
+        {
+          mth: "Dec",
+          monthAmt: 4000,
+        },
+        
+      ],
+    },
+  ];
 
 
 const data2 = [

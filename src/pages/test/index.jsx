@@ -257,12 +257,12 @@ let flatData = data.reduce((acc, yearData) => {
 }, []);
 
 // console.log(flatData, "flatData");
-const regressionLine = regression.linear(flatData.map((d) => [d.year, d.monthAmt]));
+const regressionLine = regression.linear(flatData.map((d,i) => [i, d.monthAmt]));
 console.log(regressionLine, "regressionLine");
-flatData = flatData.map((d) => {
+flatData = flatData.map((d,i) => {
   return {
     ...d,
-    uv: regressionLine.predict(d.year)[1],
+    uv: regressionLine.predict(i)[1],
   };
 });
 console.log(flatData, "flatData");
