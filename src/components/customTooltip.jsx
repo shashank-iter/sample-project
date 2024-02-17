@@ -16,7 +16,7 @@ const CustomTooltip = (props) => {
     }
   };
 
-  console.log(payload);
+  // console.log(payload);
   if (active && payload && payload.length) {
     return (
       <div
@@ -32,7 +32,7 @@ const CustomTooltip = (props) => {
           {payload[0].payload.month}
         </p>
         <p className="text-xl text-center flex flex-row place-items-center gap-x-2 font-semibold text-blue-500">
-          <p>{convertNumberToKForm(payload[1].value) + "/mo"}</p>
+          <p>{convertNumberToKForm(payload[0].value) + "/mo"}</p>
           <QuestionMarkCircleIcon
           className="w-5 h-5 hover:text-black text-blue-500 pt-1"
           data-tooltip-id="my-growth"

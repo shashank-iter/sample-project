@@ -73,7 +73,7 @@ const Index = () => {
     })),
   }));
 
-  console.log(dummyData);
+  // console.log(dummyData);
 
   // get flattened data
   let cumulativeMonth = 0;
@@ -89,7 +89,7 @@ const Index = () => {
     return acc;
   }, []);
 
-  console.table(flattenedDummyDate);
+  // console.table(flattenedDummyDate);
 
   // reassign weights, yMax, yMin, timestamps, xMax, xMin, trendData using flattenedDummyDate
 
@@ -109,7 +109,7 @@ const Index = () => {
     ];
   };
 
-  console.log(trendData());
+  // console.log(trendData());
 
   const tdLine = trendData();
   return (
