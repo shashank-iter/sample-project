@@ -51,7 +51,7 @@ const LandingPageCard = ({
         </div>
 
         <div className=" w-full px-2 sm:px-8 py-4 font-normal text-sm text-gray-400">
-          <div>{cardDescription}</div>
+          <div className="text-sm h-11 line-clamp-2">{cardDescription}</div>
           <div>
             <div className="bg-gray-200 px-2 text-gray-500 font-medium py-1 w-fit mt-3 uppercase text-xs">
               exploding
