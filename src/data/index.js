@@ -708,6 +708,37 @@ const dataRandom = Array.from({ length: 5 }, (_, i) => ({
   })),
 }));
 
+
+
+const cardData1 = {
+  title: "Data Lake House",
+  description: "Data solution concept combines the best of data warehousing and big data technologies.",
+  volume: "99K",
+  growth: "+99X",
+  tags: ["Exploding", "Data Warehouse", "Big Data", "Big Data Analytics"],
+  graphData: data1,
+}
+
+const cardData2 = {
+  title: 'MLOps',
+  description:
+    'Machine learning operations. A set of best practices in the machine learning development cycle.',
+  volume: '54K',
+  growth: '+99X',
+  tags: ['Exploding', 'Data Warehouse', 'Big Data', 'Big Data Analytics'],
+  graphData: data2,
+};
+
+const cardData3 = {
+  title: 'Loop Earplugs',
+  description:
+    'Earplugs that are designed to be more comfortable and effective than traditional earplugs, often using a loop or other design to fit more securely in the ear.',
+  volume: '72K',
+  growth: '+99X',
+  tags: ['Exploding', 'Data Warehouse', 'Big Data', 'Big Data Analytics'],
+  graphData: data3,
+};
+
 // named export of data1 and data2
 
-export { data1, data2, data3, dataRandom };
+export { data1, data2, data3, dataRandom, cardData1, cardData2, cardData3 };
