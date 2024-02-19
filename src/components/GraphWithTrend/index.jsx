@@ -12,7 +12,14 @@ import {
 import createTrend from 'trendline';
 import CustomTooltip from '../customTooltip';
 
-const TrendGraph = ({ data, showTooltip = true, showYaxis = true }) => {
+
+/**
+ * Component for rendering a trend graph
+ * @param {Object} data - The data to be displayed on the graph
+ * @param {boolean} showTooltip - Flag to show or hide tooltip (default is true)
+ * @param {boolean} hideYaxis - Flag to hide the Y axis (default is true)
+ */
+const TrendGraph = ({ data, showTooltip = true, hideYaxis = true }) => {
   let cumulativeMonth = 0;
 
   const flatData = useMemo(
@@ -95,7 +102,7 @@ const TrendGraph = ({ data, showTooltip = true, showYaxis = true }) => {
             }}
           />
           <YAxis
-            hide={showYaxis}
+            hide={hideYaxis}
             axisLine={false}
             domain={[0, yMax + 500]}
             type="number"
