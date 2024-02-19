@@ -1,6 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import TrendGraph from "@/components/GraphWithTrend";
+import { data1, data2, data3, dataRandom } from "@/data";
 
 function index() {
   const Test = dynamic(() => import("./test-7"), { ssr: false });
@@ -9,7 +11,7 @@ function index() {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-2 sm:mx-auto sm:px-10 py-10 ">
-        <Link href={"/solo-info"}>
+        <Link href={'/solo-info'}>
           <div className="w-full bg-white shadow-md p-1 rounded-md hover:border hover:border-blue-600 hover:border-1 ">
             <div className="flex flex-row w-full px-2 sm:px-8 py-4">
               <div className="w-1/2">
@@ -29,7 +31,7 @@ function index() {
               </div>
             </div>
             <div className="pl-5">
-              <Test />
+              <TrendGraph data={data1} showTooltip={false} />
             </div>
 
             <div className=" w-full px-2 sm:px-8 py-4 font-normal text-sm text-gray-400">
@@ -45,7 +47,7 @@ function index() {
             </div>
           </div>
         </Link>
-        <Link href={"/solo-info2"}>
+        <Link href={'/solo-info2'}>
           <div className="w-full bg-white shadow-md p-1 rounded-md hover:border hover:border-blue-600 hover:border-1 ">
             <div className="flex flex-row w-full px-2 sm:px-8 py-4">
               <div className="w-1/2">
@@ -63,7 +65,7 @@ function index() {
               </div>
             </div>
             <div className="pl-5">
-              <Test2 />
+              <TrendGraph data={data2} showTooltip={false} />
             </div>
 
             <div className=" w-full px-2 sm:px-8 py-4 font-normal text-sm text-gray-400">
@@ -79,7 +81,7 @@ function index() {
             </div>
           </div>
         </Link>
-        <Link href={"/solo-info3"}>
+        <Link href={'/solo-info3'}>
           <div className="w-full bg-white shadow-md p-1 rounded-md hover:border hover:border-blue-600 hover:border-1 ">
             <div className="flex flex-row w-full px-2 sm:px-8 py-4">
               <div className="w-1/2">
@@ -99,7 +101,7 @@ function index() {
               </div>
             </div>
             <div className="pl-5">
-              <Test3 />
+              <TrendGraph data={data3} showTooltip={false} />
             </div>
 
             <div className=" w-full px-2 sm:px-8 py-4 font-normal text-sm text-gray-400">
