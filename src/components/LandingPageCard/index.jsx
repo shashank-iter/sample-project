@@ -25,10 +25,10 @@ const LandingPageCard = ({
 }) => {
   return (
     <Link href={'/solo-info'}>
-      <div className="w-full h-full bg-white shadow-md p-1 rounded-md hover:shadow-md hover:ring-1 ring-trend-blue transition duration-500 ease-in-out group">
+      <div className="w-full h-full md:h-[411px] bg-white shadow-md p-1 rounded-md hover:shadow-md hover:ring-1 ring-trend-blue transition duration-500 ease-in-out group">
         <div className="flex flex-row w-full px-2 sm:px-8 py-4">
           <div className="w-1/2">
-            <div className="text-base group-hover:text-trend-blue text-black font-medium transition duration-500 ease-in-out">
+            <div className="text-base group-hover:text-trend-blue text-black font-bold transition duration-500 ease-in-out">
               {cardTitle}
             </div>
           </div>

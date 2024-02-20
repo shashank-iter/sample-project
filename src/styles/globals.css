@@ -5,6 +5,7 @@
 
 body {
   @apply bg-[#f5faff] font-manrope;
+  
 }
 
 @layer utilities {

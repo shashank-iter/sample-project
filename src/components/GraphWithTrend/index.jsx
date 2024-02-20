@@ -67,7 +67,7 @@ const TrendGraph = ({ data, showTooltip = true, hideYaxis = true }) => {
 
   return (
     <div className="bg-white ">
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={200}>
         <ComposedChart
           width={340}
           height={300}

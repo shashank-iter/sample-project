@@ -40,7 +40,7 @@ function Index() {
           <Link href={'/'}>Blog</Link>
           <Link href={'/'}>
             {/* pro subscription badge */}
-            <span className="bg-trend-blue py-1 px-2 text-xs text-white uppercase font-normal">
+            <span className="bg-trend-blue py-1 px-2 text-xs text-white uppercase font-normal rounded-sm">
               Pro
             </span>
           </Link>
@@ -56,7 +56,7 @@ function Index() {
       </div>
 
       {/* Filter and selections */}
-      <div className="flex items-center justify-center gap-2 my-4 mt-10">
+      <div className="flex items-center flex-wrap justify-center gap-2 my-4 mt-10">
         <span className="text-xs font-bold uppercase">Filter by:</span>
         {/* Number of Years */}
         <button className="bg-white text-slate-400 font-normal text-sm py-2 px-2 min-w-44 flex justify-between items-center ring-transparent hover:ring-1 hover:text-slate-600 hover:ring-gray-400 transition duration-300">
@@ -80,7 +80,7 @@ function Index() {
             className="placeholder:capitalize focus:outline-none ml-1"
           />
           {/* pro subscription badge */}
-          <span className="bg-trend-blue py-0.5 px-2 text-[10px] text-white uppercase font-normal absolute right-2">
+          <span className="bg-trend-blue py-0.5 px-2 text-[10px] text-white uppercase font-normal absolute right-2 rounded-sm">
             Pro
           </span>
         </button>
@@ -96,7 +96,7 @@ function Index() {
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-2 sm:mx-auto py-10 pt-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6 mx-2 sm:mx-auto py-10 pt-8 ">
         {cardDetails.map((card, index) => (
           <LandingPageCard
             key={index}
